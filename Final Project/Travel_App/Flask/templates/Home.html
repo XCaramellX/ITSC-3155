@@ -4,26 +4,35 @@
     <meta charset="UTF-8">
     <title>Home</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}"> 
 
 </head>
 <body>
-    <nav class="nav">
+    <nav class="nav" style="margin-top: -10px;">
 
         <a href="{{ url_for('home') }}">Home</a>
         <a href="{{url_for('register')}}">Register</a>
+        <a href="{{url_for('login')}}">Login</a>
+
     </nav>
 
         <h2 class = "Homeh2">Project Gemini</h2>
             <h3 class = "Homeh3">Travel at it's Finest!</h3>
-        
-        <img src="travel stock 1.jpg" alt="Get Inspired!">
-        <img src="travel stock 2.jpg" alt="Travel with Confidence!">
-        <img src="travel stock 3.jpg" alt="Explore the World!">
 
-        <h2 class = "Travelh2">Get Inspired!</h2>
-        <h2 class = "Travelh3">Travel with Confidence!</h2>
-        <h2 class = "Travelh4">Explore the world!</h2>
+    <img src="{{ url_for('static', filename='1.jpg')}}" width="600px" height="300px"  align="left"  style="margin-right
+    : -200px;margin-top: 50px;}" alt="Get Inspired!">
+        <br>
+        <img src="{{ url_for('static', filename='2.jpg') }}"  width="600px" height="300px" align="top" style="margin-left
+        : -500px; margin-right: 10px; margin-top: 30px; " alt="Travel with Confidence!">
+        <br>
+        <img src="{{ url_for('static', filename='3.jpg') }}" width="700px" height="300px" align="right" style="margin-left: -300px;margin-top: -300px;
+margin-right: 10px;"alt="Explore the World!">
+        <br>
+
+        <h2 class = "Travelh2" style="margin-top: -400px; margin-left: 250px;">Get Inspired!</h2>
+        <br>
+        <h2 class = "Travelh3" style="margin-right: 100px;">Travel with Confidence!</h2>
+        <h2 class = "Travelh4" style="margin-top: -30px; margin-right: 300px;">Explore the world!</h2>
 
 
 </body>
